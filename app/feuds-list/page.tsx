@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
+import FeudCard from '@/components/ui/feudCard'
 import React from 'react'
 
 const FeudsList = () => {
@@ -8,7 +9,7 @@ const FeudsList = () => {
         <h1 className="text-white text-2xl font-semibold">CHOOSE THY FEUD</h1>
         <div className="w-2/3 h-3/4 flex flex-col bg-white p-6 rounded-lg">
             <section className="w-full h-full grid grid-cols-2 gap-4 ">
-                <Card></Card>
+                <FeudCard feudName="Feud Feud" feudSize={100} feudImageUrl="url(/images/parchment-bg.jpg)" />
                 <Card></Card>
                 <Card></Card>
                 <Card></Card>
@@ -16,7 +17,7 @@ const FeudsList = () => {
             <div className="flex flex-row justify-end p-2">
                 <Button disabled >See more</Button>
             </div>
-        </div>
+        </div> 
 
         
     </section>
